@@ -163,19 +163,19 @@ h6 {
   background-size: cover;
 }
 .hero--home {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/images/hero/hero-home.png");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/hero/hero-home.png");
 }
 .hero--daw {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/images/hero/hero-daw.png");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/hero/hero-daw.png");
 }
 .hero--interface {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/images/hero/hero-interface.png");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/hero/hero-interface.png");
 }
 .hero--mic {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/images/hero/hero-microphone.png");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/hero/hero-microphone.png");
 }
 .hero--hs {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/images/hero/hero-monitoring.png");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/hero/hero-monitoring.png");
 }
 .hero__heading {
   margin-bottom: 1.6rem;

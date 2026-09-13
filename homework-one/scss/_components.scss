@@ -45,23 +45,23 @@
   background-size: cover;
 
   &--home {
-    @include hero-background('/images/hero/hero-home.png');
+    @include hero-background('../images/hero/hero-home.png');
   }
 
   &--daw {
-    @include hero-background('/images/hero/hero-daw.png');
+    @include hero-background('../images/hero/hero-daw.png');
   }
 
   &--interface {
-    @include hero-background('/images/hero/hero-interface.png');
+    @include hero-background('../images/hero/hero-interface.png');
   }
 
   &--mic {
-    @include hero-background('/images/hero/hero-microphone.png');
+    @include hero-background('../images/hero/hero-microphone.png');
   }
 
   &--hs {
-    @include hero-background('/images/hero/hero-monitoring.png');
+    @include hero-background('../images/hero/hero-monitoring.png');
   }
 
   &__heading {
