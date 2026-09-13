@@ -4,18 +4,183 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- GOOGLE FONTS: INTER & SPACE GROTESK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- PHOSPHOR ICONS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Document</title>
+    <title>MusicHub</title>
   </head>
   <body>
-    <header>
+    <!-- Header -->
+    <header class="header container">
+      <a href="index.html" class="brand-name"
+        >Music<span class="brand-name__accent">Hub</span></a
+      >
+
+      <!-- Nav -->
       <nav>
-        <ul>
-          <li>Home</li>
+        <ul class="nav">
+          <li>
+            <a href="index.html" class="nav-link nav-link--active">Home</a>
+          </li>
+          <li><a href="daws.html" class="nav-link">DAWs</a></li>
+          <li><a href="interfaces.html" class="nav-link">Interfaces</a></li>
+          <li><a href="mics.html" class="nav-link">Mics</a></li>
+          <li><a href="headphones-speakers.html" class="nav-link">H & S</a></li>
         </ul>
       </nav>
     </header>
+
+    <!-- Main -->
+    <main class="main">
+      <!-- Section Hero -->
+      <div class="hero hero--home container">
+        <h1 class="hero__heading">Start Producing Music</h1>
+        <p class="hero__description">
+          There are 4 essential tools needed to start producing music. Learn
+          about each one below.
+        </p>
+      </div>
+
+      <!-- Section Essentials -->
+      <div class="section container">
+        <h2 class="section__heading">The 4 Essential Tools</h2>
+
+        <div class="section__grid">
+          <div>
+            <h3 class="section__grid-heading">
+              <i class="ph ph-monitor-play section__grid-icon"></i>
+              <span>Digital Audio Workstation (DAW)</span>
+            </h3>
+            <p class="section__grid-description">
+              A DAW is software used to record, edit, arrange, and produce music
+              on a computer. Different DAWs offer many of the same core
+              features, but each may be better suited for certain workflows. For
+              example, some focus more on recording and mixing, while others are
+              popular for electronic music, beat making, or live performance.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="section__grid-heading">
+              <i class="ph ph-faders section__grid-icon"></i>
+              <span>Audio Interface</span>
+            </h3>
+            <p class="section__grid-description">
+              An audio interface connects microphones, instruments, headphones,
+              and speakers to your computer and converts audio between analog
+              and digital signals. Interfaces can differ in sound quality,
+              number of inputs and outputs, connection type, and available
+              features. A simple interface may have only two inputs, while
+              larger models can handle many instruments and microphones at once.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="section__grid-heading">
+              <i class="ph ph-microphone-stage section__grid-icon"></i>
+              <span>Microphone</span>
+            </h3>
+            <p class="section__grid-description">
+              A microphone captures vocals, instruments, and other sounds so
+              they can be recorded. Two common types are dynamic and condenser
+              microphones. Dynamic microphones are generally durable and work
+              well with loud sound sources, while condenser microphones are
+              typically more sensitive and can capture greater detail, making
+              them common for studio vocals and acoustic instruments.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="section__grid-heading">
+              <i class="ph ph-speaker-hifi section__grid-icon"></i>
+              <span>Headphones & Speakers</span>
+            </h3>
+            <p class="section__grid-description">
+              Headphones and studio speakers, often called studio monitors,
+              allow you to hear and evaluate the music you are producing.
+              Headphones are useful for detailed listening, recording, and
+              working without disturbing others, while monitors let you hear how
+              a mix sounds in a room. Different models can vary in frequency
+              response, accuracy, comfort, size, and how much bass or detail
+              they reproduce.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer container">
+      <!-- Brand/Contact -->
+      <div class="footer__contact">
+        <a href="#" class="brand-name"
+          >Music<span class="brand-name__accent">Hub</span></a
+        >
+        <a href="tel:+13179998321" class="footer__contact-link"
+          >(317) 999-8321</a
+        >
+        <a href="mailto:musichub@gmail.com" class="footer__contact-link"
+          >musichub@gmail.com</a
+        >
+      </div>
+
+      <!-- Explore -->
+      <div>
+        <h2 class="footer__heading">Explore</h2>
+        <ul>
+          <li>
+            <a href="daws.html" class="nav-link">Digital Audio Workstations</a>
+          </li>
+          <li>
+            <a href="interfaces.html" class="nav-link">Audio Interfaces</a>
+          </li>
+          <li><a href="mics.html" class="nav-link">Microphones</a></li>
+          <li>
+            <a href="headphones-speakers.html" class="nav-link"
+              >Headphones & Speakers</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h2 class="footer__heading">Company</h2>
+        <ul>
+          <li><a href="#" class="nav-link">About</a></li>
+          <li><a href="#" class="nav-link">Contact</a></li>
+          <li><a href="#" class="nav-link">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h2 class="footer__heading">Legal</h2>
+        <ul>
+          <li><a href="#" class="nav-link">Privacy</a></li>
+          <li><a href="#" class="nav-link">Terms</a></li>
+        </ul>
+      </div>
+    </footer>
 
     <script type="module" src="js/main.js"></script>
   </body>

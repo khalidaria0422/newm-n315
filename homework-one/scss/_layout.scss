@@ -1,0 +1,71 @@
+@use 'variables' as *;
+
+/**************************************************
+* HEADER
+**************************************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: $header-heigth;
+  padding-block: $spacing-600;
+
+  background-color: $color-background-dark;
+
+  .nav {
+    display: flex;
+    gap: $spacing-1000;
+
+    &-link {
+      font-family: $font-family-heading;
+      font-size: $font-size-400;
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+/**************************************************
+* MAIN
+**************************************************/
+.main {
+  background-color: $color-background-soft;
+}
+
+/**************************************************
+* FOOTER
+**************************************************/
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+
+  padding-block: $spacing-600;
+
+  background-color: $color-background-dark;
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-100;
+
+    .brand-name {
+      margin-bottom: $spacing-300;
+    }
+
+    &-link {
+      color: $color-text-muted;
+
+      transition: $transition-fast;
+
+      &:hover {
+        color: #969691;
+      }
+    }
+  }
+
+  &__heading {
+    margin-bottom: $spacing-200;
+
+    color: $color-text-inverse;
+  }
+}

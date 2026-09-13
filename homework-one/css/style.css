@@ -1,10 +1,6 @@
 /**************************************************
-  * COLORS
-  **************************************************/
-/* Brand colors */
-/* Background colors */
-/* Text colors */
-/* Border colors */
+ * COLORS
+ **************************************************/
 /* State colors */
 /**************************************************
   * TYPOGRAPHY
@@ -14,6 +10,7 @@
 /* Font weights */
 /* Line heights */
 /* Letter spacing */
+/* Content width */
 /**************************************************
   * SPACING
   **************************************************/
@@ -22,9 +19,6 @@
   **************************************************/
 /**************************************************
   * BORDER RADIUS
-  **************************************************/
-/**************************************************
-  * SHADOWS
   **************************************************/
 /**************************************************
   * TRANSITIONS
@@ -46,8 +40,8 @@ html {
 }
 
 body {
-  color: #333;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #1c1c1a;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
@@ -58,7 +52,205 @@ ul {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/**************************************************
+* HEADER
+**************************************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  padding-block: 2.4rem;
+  background-color: #181817;
+}
+.header .nav {
+  display: flex;
+  gap: 6.4rem;
+}
+.header .nav-link {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/**************************************************
+* MAIN
+**************************************************/
+.main {
+  background-color: #f3f0e9;
+}
+
+/**************************************************
+* FOOTER
+**************************************************/
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 2.4rem;
+  background-color: #181817;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.footer__contact .brand-name {
+  margin-bottom: 1.2rem;
+}
+.footer__contact-link {
+  color: #7c7c75;
+  transition: 150ms ease-out;
+}
+.footer__contact-link:hover {
+  color: #969691;
+}
+.footer__heading {
+  margin-bottom: 0.8rem;
+  color: #faf9f6;
+}
+
+.container {
+  padding-inline: 6.4rem;
+}
+
+.brand-name {
+  color: #faf9f6;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.brand-name__accent {
+  color: #22c55e;
+}
+
+.nav-link {
+  color: #e87924;
+  transition: 150ms ease-out;
+}
+.nav-link:hover {
+  color: #fb923c;
+}
+.nav-link--active {
+  border-bottom: 2px solid #e87924;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100dvh - 8rem);
+  padding-block: 8rem;
+  color: #faf9f6;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero--home {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/images/hero/hero-home.png");
+}
+.hero--daw {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/images/hero/hero-daw.png");
+}
+.hero--interface {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/images/hero/hero-interface.png");
+}
+.hero--mic {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/images/hero/hero-microphone.png");
+}
+.hero--hs {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/images/hero/hero-monitoring.png");
+}
+.hero__heading {
+  margin-bottom: 1.6rem;
+}
+.hero__description {
+  max-width: 50ch;
+}
+
+.section {
+  padding-block: 8rem;
+}
+.section__heading {
+  display: inline-block;
+  margin-bottom: 4rem;
+  border-bottom: 2px solid #3a3a36;
+}
+.section__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.4rem;
+}
+.section__grid--card {
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2.4rem;
+}
+.section__grid-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+.section__grid-heading .section__grid-icon {
+  font-weight: 700;
+  color: #22c55e;
+}
+.section__grid-description {
+  width: 65ch;
+}
+
+.card {
+  border: 2px solid #3a3a36;
+}
+.card__content {
+  padding: 2.4rem;
+  background-color: #ffffff;
+}
+.card__content .card__heading {
+  margin-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  border-left: 4px solid #22c55e;
+}
+.card__content .card-detail {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.4rem;
+}
+.card__content .card-detail .ph-check {
+  color: #16a34a;
+  font-weight: 700;
+}
+.card .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  padding-block: 0.8rem;
+  background-color: #242422;
+  color: #e87924;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.card .btn:hover {
+  background-color: #181817;
+  color: #c2410c;
 }
 
 /*# sourceMappingURL=style.css.map */
