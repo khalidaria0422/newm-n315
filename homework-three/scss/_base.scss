@@ -1,0 +1,47 @@
+@use 'variables' as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $color-text;
+  font-family: $font-family-base;
+  font-size: $font-size-300;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-normal;
+}
+
+img {
+  display: block;
+
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-heading;
+}

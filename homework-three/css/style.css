@@ -1,0 +1,263 @@
+/**************************************************
+  * COLORS
+  **************************************************/
+/* Brand colors */
+/* Background colors */
+/* Text colors */
+/* Border colors */
+/* State colors */
+/**************************************************
+  * TYPOGRAPHY
+  **************************************************/
+/* Font families */
+/* Font sizes */
+/* Font weights */
+/* Line heights */
+/* Letter spacing */
+/**************************************************
+  * SPACING
+  **************************************************/
+/**************************************************
+  * LAYOUT
+  **************************************************/
+/**************************************************
+  * BORDER RADIUS
+  **************************************************/
+/**************************************************
+  * SHADOWS
+  **************************************************/
+/**************************************************
+  * TRANSITIONS
+  **************************************************/
+/**************************************************
+  * Z-INDEX
+  **************************************************/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #0f172a;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+/**************************************************
+* HEADER
+**************************************************/
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  height: 14rem;
+  padding-block: 2.4rem;
+  background-color: #ffffff;
+}
+.header .brand-name {
+  width: 50%;
+  margin-bottom: 0.8rem;
+  padding-bottom: 1.6rem;
+  text-align: center;
+  border-bottom: 1px solid #cbd5e1;
+}
+.header .nav {
+  display: flex;
+  gap: 9.6rem;
+}
+.header .nav-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/**************************************************
+* MAIN
+**************************************************/
+.main {
+  background-color: #eff6ff;
+}
+
+/**************************************************
+* FOOTER
+**************************************************/
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 2.4rem;
+  background-color: #ffffff;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.footer__contact .brand-name {
+  margin-bottom: 1.2rem;
+}
+.footer__contact-link {
+  color: #64748b;
+  transition: 150ms ease-out;
+}
+.footer__contact-link:hover {
+  color: #969691;
+}
+.footer__contact-copyright {
+  margin-top: auto;
+  color: #64748b;
+  font-size: 1.4rem;
+}
+.footer__heading {
+  margin-bottom: 0.8rem;
+  color: #0f172a;
+}
+.footer .nav-item {
+  margin-bottom: 1.2rem;
+}
+
+.container {
+  padding-inline: 6.4rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.6rem;
+}
+.grid--cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.brand-name {
+  color: #0f172a;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #0f172a;
+  transition: 150ms ease-out;
+}
+.nav-link:hover {
+  color: #3b82f6;
+}
+.nav-link--active {
+  border-bottom: 2px solid #2563eb;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: calc(100vh - 14rem);
+  padding-block: 6.4rem;
+}
+.hero__content-title {
+  font-size: 4.8rem;
+}
+.hero__content-description {
+  max-width: 65ch;
+  margin-bottom: 3.2rem;
+  color: #334155;
+}
+
+.btn {
+  padding-inline: 1.6rem;
+  padding-block: 0.8rem;
+  border-radius: 0.4rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  transition: 150ms ease-out;
+}
+.btn:hover {
+  background-color: #1d4ed8;
+  color: #ffffff;
+}
+.btn--secondary {
+  background-color: #0284c7;
+}
+.btn--secondary:hover {
+  background-color: #0ea5e9;
+}
+
+.about__beliefs {
+  padding-block: 8rem;
+  background-color: #ffffff;
+}
+.about__beliefs-title {
+  margin-bottom: 2.4rem;
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+.about__beliefs .grid {
+  row-gap: 6.4rem;
+}
+.about__beliefs .grid .about-belief__title {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 2.4rem;
+}
+.about__beliefs .grid .about-belief__title .about-belief__number {
+  color: #64748b;
+  font-size: 4rem;
+}
+.about__beliefs .grid .about-belief__description {
+  font-size: 1.8rem;
+  color: #334155;
+}
+.about__idea {
+  padding-block: 8rem;
+  background-color: #e2e8f0;
+}
+.about__idea .about__beliefs-title {
+  margin-bottom: 0.8rem;
+  font-size: 4.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+.about__idea .about__idea-description {
+  margin-bottom: 4rem;
+  color: #334155;
+  font-size: 2rem;
+  text-align: center;
+}
+.about__idea .about__idea-cta {
+  text-align: center;
+}

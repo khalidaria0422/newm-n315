@@ -1,0 +1,92 @@
+@use 'variables' as *;
+
+/**************************************************
+* HEADER
+**************************************************/
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-300;
+
+  height: $header-height;
+  padding-block: $spacing-600;
+
+  background-color: $color-background;
+
+  .brand-name {
+    width: 50%;
+    margin-bottom: $spacing-200;
+    padding-bottom: $spacing-400;
+    text-align: center;
+
+    border-bottom: 1px solid $color-border;
+  }
+
+  .nav {
+    display: flex;
+    gap: $spacing-1200;
+
+    &-link {
+      font-family: $font-family-heading;
+      font-size: $font-size-400;
+      font-weight: $font-weight-semi-bold;
+    }
+  }
+}
+
+/**************************************************
+* MAIN
+**************************************************/
+.main {
+  background-color: $color-background-soft;
+}
+
+/**************************************************
+* FOOTER
+**************************************************/
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+
+  padding-block: $spacing-600;
+
+  background-color: $color-background;
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-100;
+
+    .brand-name {
+      margin-bottom: $spacing-300;
+    }
+
+    &-link {
+      color: $color-text-muted;
+
+      transition: $transition-fast;
+
+      &:hover {
+        color: #969691;
+      }
+    }
+
+    &-copyright {
+      margin-top: auto;
+
+      color: $color-text-muted;
+      font-size: $font-size-200;
+    }
+  }
+
+  &__heading {
+    margin-bottom: $spacing-200;
+
+    color: $color-text;
+  }
+
+  .nav-item {
+    margin-bottom: $spacing-300;
+  }
+}

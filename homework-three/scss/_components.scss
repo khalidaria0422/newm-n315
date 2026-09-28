@@ -1,0 +1,82 @@
+@use 'variables' as *;
+
+.container {
+  padding-inline: $page-padding-inline;
+}
+
+.grid {
+  display: grid;
+  gap: $spacing-400;
+
+  &--cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.brand-name {
+  color: $color-text;
+  font-family: $font-family-heading;
+  font-size: $font-size-600;
+  font-weight: $font-weight-bold;
+}
+
+.nav-link {
+  color: $color-text;
+
+  transition: $transition-fast;
+
+  &:hover {
+    color: $color-primary-light;
+  }
+
+  &--active {
+    border-bottom: 2px solid $color-primary;
+  }
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  min-height: calc(100vh - $header-height);
+  padding-block: $page-padding-inline;
+
+  &__content-title {
+    font-size: $font-size-900;
+  }
+
+  &__content-description {
+    max-width: 65ch;
+    margin-bottom: $spacing-700;
+
+    color: $color-text-soft;
+  }
+}
+
+.btn {
+  padding-inline: $spacing-400;
+  padding-block: $spacing-200;
+  border-radius: $border-radius-sm;
+
+  background-color: $color-primary;
+  color: $color-text-inverse;
+  font-size: $font-size-500;
+  font-weight: $font-weight-semi-bold;
+  text-align: center;
+
+  transition: $transition-fast;
+
+  &:hover {
+    background-color: $color-primary-dark;
+    color: $color-text-inverse;
+  }
+
+  &--secondary {
+    background-color: $color-secondary-dark;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+}

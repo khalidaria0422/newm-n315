@@ -1,0 +1,66 @@
+@use 'variables' as *;
+
+.about {
+  &__beliefs {
+    padding-block: $section-padding-block;
+
+    background-color: $color-background;
+
+    &-title {
+      margin-bottom: $spacing-600;
+
+      font-size: $font-size-700;
+      font-weight: $font-weight-semi-bold;
+    }
+
+    .grid {
+      row-gap: $spacing-1000;
+
+      .about-belief {
+        &__title {
+          display: flex;
+          align-items: center;
+          gap: $spacing-300;
+
+          font-size: $font-size-600;
+
+          .about-belief__number {
+            color: $color-text-muted;
+            font-size: $font-size-800;
+          }
+        }
+
+        &__description {
+          font-size: $font-size-400;
+          color: $color-text-soft;
+        }
+      }
+    }
+  }
+
+  &__idea {
+    padding-block: $section-padding-block;
+
+    background-color: $color-background-muted;
+
+    .about__beliefs-title {
+      margin-bottom: $spacing-200;
+
+      font-size: $font-size-900;
+      font-weight: $font-weight-semi-bold;
+      text-align: center;
+    }
+
+    .about__idea-description {
+      margin-bottom: $spacing-800;
+
+      color: $color-text-soft;
+      font-size: $font-size-500;
+      text-align: center;
+    }
+
+    .about__idea-cta {
+      text-align: center;
+    }
+  }
+}
