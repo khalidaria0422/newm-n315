@@ -6,3 +6,4 @@ Look in the subdirectories for more info/instructions.
 
 - [Homework 1 (MusicHub)](https://in-info-web4.luddy.indianapolis.iu.edu/~karia/newm-n315/homework-one)
 - [Homework 2 (MVC Model)](https://in-info-web4.luddy.indianapolis.iu.edu/~karia/newm-n315/homework-two)
+- [Homework 3 (Bluesio)](https://in-info-web4.luddy.indianapolis.iu.edu/~karia/newm-n315/homework-three)
