@@ -1,0 +1,36 @@
+@use 'variables' as *;
+
+.contact-form {
+  max-width: 50%;
+  padding: $spacing-800;
+  margin-inline: auto;
+  border-radius: $border-radius-sm;
+
+  background-color: $color-surface;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: $spacing-600;
+
+    text-align: left;
+
+    .contact-form__input {
+      padding: $spacing-400;
+      border: 1px solid $color-border;
+      border-radius: $border-radius-sm;
+    }
+
+    .contact-form__textarea {
+      resize: none;
+    }
+  }
+
+  .btn {
+    display: block;
+
+    width: 100%;
+    border: none;
+  }
+}

@@ -159,6 +159,9 @@ h6 {
 .grid--cols-2 {
   grid-template-columns: repeat(2, 1fr);
 }
+.grid--cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .brand-name {
   color: #0f172a;
@@ -216,6 +219,42 @@ h6 {
   background-color: #0ea5e9;
 }
 
+.section {
+  padding-block: 8rem;
+  text-align: center;
+}
+.section__title {
+  font-size: 4rem;
+  margin-bottom: 0.4rem;
+}
+.section__description {
+  color: #334155;
+  font-size: 1.8rem;
+  margin-bottom: 4.8rem;
+}
+.section .grid--cols-3 {
+  gap: 2.4rem;
+}
+.section .card {
+  padding: 2.4rem;
+  border-radius: 0.4rem;
+  background-color: #ffffff;
+  color: #0f172a;
+}
+.section .card__image {
+  border-radius: 0.4rem;
+  margin-bottom: 2.4rem;
+}
+.section .card__title {
+  color: #0f172a;
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+.section .card__description {
+  font-size: 1.6rem;
+  color: #334155;
+}
+
 .about__beliefs {
   padding-block: 8rem;
   background-color: #ffffff;
@@ -260,4 +299,31 @@ h6 {
 }
 .about__idea .about__idea-cta {
   text-align: center;
+}
+
+.contact-form {
+  max-width: 50%;
+  padding: 4rem;
+  margin-inline: auto;
+  border-radius: 0.4rem;
+  background-color: #ffffff;
+}
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.4rem;
+  text-align: left;
+}
+.contact-form__field .contact-form__input {
+  padding: 1.6rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.4rem;
+}
+.contact-form__field .contact-form__textarea {
+  resize: none;
+}
+.contact-form .btn {
+  display: block;
+  width: 100%;
+  border: none;
 }

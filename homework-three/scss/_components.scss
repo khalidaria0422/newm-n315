@@ -11,6 +11,10 @@
   &--cols-2 {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  &--cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .brand-name {
@@ -77,6 +81,51 @@
 
     &:hover {
       background-color: $color-secondary;
+    }
+  }
+}
+
+.section {
+  padding-block: $section-padding-block;
+
+  text-align: center;
+
+  &__title {
+    font-size: $font-size-800;
+    margin-bottom: $spacing-100;
+  }
+
+  &__description {
+    color: $color-text-soft;
+    font-size: $font-size-400;
+    margin-bottom: $spacing-900;
+  }
+
+  .grid--cols-3 {
+    gap: $spacing-600;
+  }
+
+  .card {
+    padding: $spacing-600;
+    border-radius: $border-radius-sm;
+
+    background-color: $color-surface;
+    color: $color-text;
+
+    &__image {
+      border-radius: $border-radius-sm;
+      margin-bottom: $spacing-600;
+    }
+
+    &__title {
+      color: $color-text;
+      font-size: $font-size-600;
+      margin-bottom: $spacing-300;
+    }
+
+    &__description {
+      font-size: $font-size-300;
+      color: $color-text-soft;
     }
   }
 }

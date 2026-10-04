@@ -2,6 +2,9 @@
 
 import homePage from '../pages/home.js';
 import aboutPage from '../pages/about.js';
+import servicesPage from '../pages/services.js';
+import projectsPage from '../pages/projects.js';
+import contactPage from '../pages/contact.js';
 
 const changeActiveNavLink = (hash) => {
   document
@@ -22,6 +25,15 @@ export function loadPage(page) {
       break;
     case 'about':
       main.innerHTML = aboutPage;
+      break;
+    case 'services':
+      main.innerHTML = servicesPage;
+      break;
+    case 'projects':
+      main.innerHTML = projectsPage;
+      break;
+    case 'contact':
+      main.innerHTML = contactPage;
       break;
     default:
       main.innerHTML = homePage;
