@@ -1,0 +1,65 @@
+@use 'variables' as *;
+
+.profile {
+  min-width: $container-width-wide;
+
+  &__heading {
+    margin-bottom: $spacing-300;
+  }
+
+  &__header {
+    position: relative;
+
+    .profile__major {
+      margin-bottom: $spacing-100;
+      font-style: italic;
+    }
+
+    .profile__student-id {
+      margin-bottom: $spacing-100;
+    }
+
+    .profile__status {
+      position: absolute;
+      top: $spacing-100;
+      right: $spacing-100;
+
+      padding: $spacing-100 $spacing-300;
+
+      background-color: $color-success;
+      color: $color-text-inverse;
+      font-weight: $font-weight-bold;
+
+      border-radius: $border-radius-sm;
+    }
+  }
+
+  &__info {
+    display: flex;
+    gap: $spacing-1500;
+
+    margin-block: $spacing-700;
+    padding-block: $spacing-700;
+    border-block: 1px solid $color-border;
+
+    .profile__item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: $spacing-800;
+
+      .profile__item-value {
+        font-style: italic;
+      }
+    }
+  }
+
+  &__table-row {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 0.5fr 0.5fr;
+    column-gap: $spacing-800;
+
+    margin-bottom: $spacing-200;
+
+    text-align: left;
+  }
+}

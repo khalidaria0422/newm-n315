@@ -10,6 +10,7 @@
 
   height: $header-height;
   padding-block: $spacing-600;
+  border-bottom: 1px solid $color-border;
 
   background-color: $color-background;
 
@@ -29,7 +30,13 @@
 * MAIN
 **************************************************/
 .main {
-  background-color: $color-background-soft;
+  &--height {
+    height: calc(100vh - $header-height);
+  }
+
+  &--height-full {
+    height: 100vh;
+  }
 }
 
 /**************************************************
@@ -40,6 +47,7 @@
   justify-content: space-evenly;
 
   padding-block: $spacing-600;
+  border-top: 1px solid $color-border;
 
   background-color: $color-background;
 
