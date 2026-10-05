@@ -1,0 +1,338 @@
+/**************************************************
+  * COLORS
+  **************************************************/
+/* Brand colors */
+/* Background colors */
+/* Text colors */
+/* Border colors */
+/* State colors */
+/**************************************************
+  * TYPOGRAPHY
+  **************************************************/
+/* Font families */
+/* Font sizes */
+/* Font weights */
+/* Line heights */
+/* Letter spacing */
+/**************************************************
+  * SPACING
+  **************************************************/
+/**************************************************
+  * LAYOUT
+  **************************************************/
+/**************************************************
+  * BORDER RADIUS
+  **************************************************/
+/**************************************************
+  * SHADOWS
+  **************************************************/
+/**************************************************
+  * TRANSITIONS
+  **************************************************/
+/**************************************************
+  * Z-INDEX
+  **************************************************/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #171717;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+}
+
+/**************************************************
+* HEADER
+**************************************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  padding-block: 2.4rem;
+  background-color: #ffffff;
+}
+.header .nav {
+  display: flex;
+  gap: 6.4rem;
+}
+.header .nav-link {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/**************************************************
+* MAIN
+**************************************************/
+.main {
+  background-color: #fafafa;
+}
+
+/**************************************************
+* FOOTER
+**************************************************/
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 2.4rem;
+  background-color: #ffffff;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.footer__contact .brand-name {
+  margin-bottom: 1.2rem;
+}
+.footer__contact-link {
+  color: #737373;
+  transition: 150ms ease-out;
+}
+.footer__contact-link:hover {
+  color: #a3a3a3;
+}
+.footer__contact-copyright {
+  margin-top: auto;
+  color: #737373;
+  font-size: 1.4rem;
+}
+.footer__heading {
+  margin-bottom: 0.8rem;
+  color: #171717;
+}
+.footer .nav-item {
+  margin-bottom: 1.2rem;
+  color: #404040;
+}
+
+.brand-name {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #171717;
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.brand-name .brand-logo {
+  padding: 0.4rem;
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #0a0a0a;
+  transition: 150ms ease-out;
+}
+.nav-link:hover {
+  color: #525252;
+}
+.nav-link--active {
+  border-bottom: 2px solid #0a0a0a;
+}
+
+.btn {
+  padding: 0.8rem 2.4rem;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  transition: 150ms ease-out;
+}
+.btn:hover {
+  background-color: #262626;
+}
+.btn:active {
+  background-color: #000000;
+}
+
+.section {
+  padding-block: 8rem;
+}
+
+.container {
+  padding-inline: 6.4rem;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center--full {
+  height: 100vh;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.toast-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 2.4rem;
+  right: 2.4rem;
+  gap: 1.2rem;
+  z-index: 600;
+}
+.toast-container .toast {
+  min-width: 30rem;
+  max-width: 40rem;
+  padding: 1.6rem 2.4rem;
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.8rem);
+  animation: toastIn 400ms ease;
+}
+.toast-container .toast--success {
+  background-color: #16a34a;
+}
+.toast-container .toast--error {
+  background-color: #dc2626;
+}
+.toast-container .toast--info {
+  background-color: #2563eb;
+}
+.toast-container .toast--warning {
+  background-color: #d97706;
+}
+.toast-container .toast--pending {
+  background-color: #7c3aed;
+}
+.toast-container .toast--hide {
+  animation: toastOut 400ms ease forwards;
+}
+
+@keyframes toastIn {
+  0% {
+    transform: translateY(-10rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes toastOut {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10rem);
+    opacity: 0;
+  }
+}
+.landing {
+  text-align: center;
+}
+.landing .landing__heading {
+  font-size: 4.8rem;
+}
+.landing .landing__subheading {
+  margin-bottom: 4rem;
+  color: #404040;
+  font-size: 2rem;
+}
+.landing .btn {
+  padding: 1.2rem 3.2rem;
+  font-size: 2rem;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.6);
+}
+.modal__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 30%;
+  min-height: 40%;
+  padding: 3.2rem;
+  background-color: #ffffff;
+}
+.modal__content .modal__icon {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  color: #737373;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.modal__content .modal__heading {
+  margin-bottom: 3.2rem;
+  font-size: 4rem;
+  text-align: center;
+}
+.modal__content .modal__field {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  margin-bottom: 2rem;
+}
+.modal__content .modal__field .modal__label {
+  margin-bottom: 0.4rem;
+  color: #404040;
+  font-weight: 600;
+}
+.modal__content .modal__field .modal__input {
+  padding: 1.2rem;
+  border: 1px solid #a3a3a3;
+  border-radius: 0.4rem;
+}
+.modal__content .modal__field .modal__input:focus {
+  outline: none;
+  border: 1px solid #0a0a0a;
+}
+.modal__content .btn {
+  width: 100%;
+  margin-top: 1.2rem;
+  padding: 1.2rem 3.2rem;
+  border: none;
+  cursor: pointer;
+}

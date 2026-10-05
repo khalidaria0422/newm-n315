@@ -1,0 +1,22 @@
+@use 'variables' as *;
+
+.landing {
+  text-align: center;
+
+  .landing__heading {
+    font-size: $font-size-900;
+  }
+
+  .landing__subheading {
+    margin-bottom: $spacing-800;
+
+    color: $color-text-soft;
+    font-size: $font-size-500;
+  }
+
+  .btn {
+    padding: $spacing-300 $spacing-700;
+
+    font-size: $font-size-500;
+  }
+}
