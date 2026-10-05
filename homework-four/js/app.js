@@ -34,6 +34,7 @@ const initLogin = function () {
       return;
     } else {
       showToast('Login form submitted');
+      loginForm.reset();
     }
   });
 };

@@ -169,12 +169,14 @@ h6 {
 
 .btn {
   padding: 0.8rem 2.4rem;
+  border: none;
   background-color: #0a0a0a;
   color: #ffffff;
   font-size: 1.8rem;
   font-weight: 700;
   text-align: center;
   transition: 150ms ease-out;
+  cursor: pointer;
 }
 .btn:hover {
   background-color: #262626;

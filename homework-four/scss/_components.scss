@@ -34,6 +34,7 @@
 
 .btn {
   padding: $spacing-200 $spacing-600;
+  border: none;
 
   background-color: $color-primary;
   color: $color-text-inverse;
@@ -42,6 +43,7 @@
   text-align: center;
 
   transition: $transition-fast ease-out;
+  cursor: pointer;
 
   &:hover {
     background-color: $color-primary-light;

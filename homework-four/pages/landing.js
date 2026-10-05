@@ -6,7 +6,7 @@ export default `
 <p class="landing__subheading">
   Your gateway to quality education and research opportunities.
 </p>
-<a href="#login" class="btn" id="modalShow">Log In</a>
+<button type="button" class="btn" id="modalShow">Log In</button>
 </section>
 
 <div class="modal center center--full hidden">
