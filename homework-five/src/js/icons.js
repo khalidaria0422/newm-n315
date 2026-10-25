@@ -1,0 +1,48 @@
+import {
+  createIcons,
+  Mountain,
+  Search,
+  ShoppingCart,
+  Tent,
+  Fish,
+  WavesHorizontal,
+  Triangle,
+  Shirt,
+  Star,
+  ArrowRight,
+  ChevronRight,
+  Play,
+  Menu,
+  MapPin,
+  Phone,
+  Mail,
+  Info,
+  CircleCheck,
+  Award,
+} from 'lucide';
+
+export const initIcons = () => {
+  createIcons({
+    icons: {
+      Mountain,
+      Search,
+      ShoppingCart,
+      Tent,
+      Fish,
+      WavesHorizontal,
+      Triangle,
+      Shirt,
+      Star,
+      ArrowRight,
+      ChevronRight,
+      Play,
+      Menu,
+      MapPin,
+      Phone,
+      Mail,
+      Info,
+      CircleCheck,
+      Award,
+    },
+  });
+};

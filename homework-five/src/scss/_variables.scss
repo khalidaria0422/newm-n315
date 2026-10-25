@@ -1,0 +1,154 @@
+/* Brand colors */
+$color-primary: #e8722a;
+$color-primary-light: #fba366; // Existing project token; not found in uploaded Figma fills.
+$color-primary-dark: #c75c1f; // Existing project token; not found in uploaded Figma fills.
+$color-secondary: #ffffff;
+$color-secondary-light: #f5f5f5; // Existing project token; not found in uploaded Figma fills.
+$color-secondary-dark: #e5e5e5; // Existing project token; not found in uploaded Figma fills.
+
+/* Background and surface colors */
+$color-background: #111d15;
+$color-background-dark: #0d1810;
+$color-background-strong: #1b4332;
+$color-background-soft: #f4f5f0;
+$color-background-muted: #f5f5f4;
+$color-surface: #ffffff;
+$color-surface-muted: #e7e5e4;
+
+/* Text colors */
+$color-text-primary: #111d15;
+$color-text-secondary-100: #999999;
+$color-text-secondary-200: #888888;
+$color-text-secondary-300: #777777;
+$color-text-secondary-400: #666666;
+$color-text-secondary-500: #555555;
+$color-text-secondary-600: #444444;
+$color-text-secondary: $color-text-secondary-400;
+$color-text-inverse: #ffffff;
+$color-text-strong: #1b4332;
+$color-text-accent: $color-primary;
+$color-text-deep: #1c1917;
+$color-text-dark-gray: #333333;
+
+/* Borders and interaction states */
+$color-border: #e7e5e4;
+$color-border-strong: #d6d3d1;
+$color-border-focus: $color-primary;
+
+$color-success: #1b4332;
+$color-error: #e8722a; // Figma uses orange on some invalid form fields.
+$color-info: #111d15;
+$color-warning: #000000;
+$color-pending: #000000;
+
+$color-rating: #ffb900;
+$color-rating-muted: #d6d3d1;
+$color-open: #00d492;
+$color-open-dark: #00bc7d;
+$color-open-strong: #009966;
+
+/* Font families */
+$font-family-base: 'DM Sans', sans-serif;
+$font-family-heading: 'Archivo', sans-serif;
+
+/* Font sizes: all distinct values used in Figma */
+$font-size-50: 0.8rem;
+$font-size-75: 0.9rem;
+$font-size-100: 1rem;
+$font-size-150: 1.2rem;
+$font-size-175: 1.3rem;
+$font-size-200: 1.4rem;
+$font-size-250: 1.5rem;
+$font-size-300: 1.6rem;
+$font-size-350: 1.7rem;
+$font-size-400: 1.8rem;
+$font-size-500: 2rem;
+$font-size-600: 2.4rem;
+$font-size-650: 2.8rem;
+$font-size-675: 3rem;
+$font-size-700: 3.2rem;
+$font-size-750: 3.6rem;
+$font-size-800: 4rem;
+$font-size-900: 4.8rem;
+$font-size-hero: 8.8rem;
+
+/* Font weights: only values observed in Figma */
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+/* Line heights: reusable relative defaults */
+$line-height-tight: 1.1;
+$line-height-snug: 1.25;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.75;
+// Figma uses explicit line heights on some headings (e.g. 48px/48px,
+// 24px/30px, 40px/50px). Set those per component when needed.
+
+/* Spacing: values repeated across Figma auto-layout */
+$spacing-0: 0;
+$spacing-50: 0.2rem;
+$spacing-100: 0.4rem;
+$spacing-150: 0.6rem;
+$spacing-200: 0.8rem;
+$spacing-250: 1rem;
+$spacing-300: 1.2rem;
+$spacing-350: 1.4rem;
+$spacing-400: 1.6rem;
+$spacing-450: 1.8rem;
+$spacing-500: 2rem;
+$spacing-600: 2.4rem;
+$spacing-650: 2.8rem;
+$spacing-700: 3.2rem;
+$spacing-800: 4rem;
+$spacing-900: 4.8rem;
+$spacing-950: 5.6rem;
+$spacing-1000: 6.4rem;
+$spacing-1100: 8rem;
+$spacing-1200: 9.6rem;
+$spacing-1300: 12.8rem;
+
+/* Layout: retain existing project defaults, validate per breakpoint */
+$header-height: 6.5rem;
+$footer-height: 38.5rem;
+// $container-width: 120rem;
+// $container-width-narrow: 80rem;
+// $container-width-wide: 140rem;
+$toast-min-width: 30rem;
+$toast-max-width: 40rem;
+
+$section-padding-inline: 18rem;
+$section-padding-block-400: 9.6rem;
+$section-padding-block-300: 8rem;
+$section-padding-block-200: 6.4rem;
+$section-padding-block-100: 5.6rem;
+
+/* Border radius: actual Figma values */
+$border-radius-sm: 0.4rem;
+$border-radius-md: 0.8rem;
+$border-radius-lg: 1rem;
+$border-radius-input: 1.4rem;
+$border-radius-xl: 1.6rem;
+$border-radius-full: 9999px;
+
+/* Shadows: exact Figma DROP_SHADOW recipes */
+$shadow-sm:
+  0 0.1rem 0.2rem -0.1rem rgb(0 0 0 / 0.1),
+  0 0.1rem 0.3rem rgb(0 0 0 / 0.1);
+$shadow-md:
+  0 0.8rem 1rem -0.6rem rgb(0 0 0 / 0.1),
+  0 2rem 2.5rem -0.5rem rgb(0 0 0 / 0.1);
+$shadow-lg: 0 2.5rem 5rem -1.2rem rgb(0 0 0 / 0.25);
+
+/* Motion and layering: retained from existing project; not extractable from static Figma nodes */
+$transition-fast: 150ms;
+$transition-base: 250ms;
+$transition-slow: 400ms;
+$z-index-dropdown: 100;
+$z-index-sticky: 200;
+$z-index-fixed: 300;
+$z-index-modal-backdrop: 400;
+$z-index-modal: 500;
+$z-index-tooltip: 600;
