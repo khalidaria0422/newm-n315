@@ -9,3 +9,4 @@ Look in the subdirectories for more info/instructions.
 - [Homework 3 (Bluesio)](https://in-info-web4.luddy.indianapolis.iu.edu/~karia/newm-n315/homework-three)
 - [Homework 4 (Panjshir University)](https://in-info-web4.luddy.indianapolis.iu.edu/~karia/newm-n315/homework-four)
 - [Homework 5 (Summit Ridge)](https://in-info-web4.luddy.indianapolis.iu.edu/~karia/newm-n315/homework-five)
+- [Homework 6 (The Jungle Cook)](https://in-info-web4.luddy.indianapolis.iu.edu/~karia/newm-n315/homework-six)
