@@ -3,23 +3,22 @@
 .header {
   position: fixed;
   top: 0;
-  width: 100%;
+  z-index: 1000;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  width: 100%;
   min-height: $header-height;
-
-  // General link styles
-  a {
-    font-family: $font-family-heading;
-    font-size: $font-size-600;
-  }
+  padding-inline: 5rem;
 
   // Brand styles
   .brand {
     position: relative;
+
+    font-family: $font-family-heading;
+    font-size: $font-size-600;
 
     &__circle {
       border-radius: $border-radius-full;
@@ -77,18 +76,6 @@
     display: flex;
     align-items: center;
     gap: $spacing-800;
-
-    &-link {
-      transition: color $transition-fast ease-out;
-
-      &:hover {
-        color: $color-primary;
-      }
-
-      &--active {
-        border-bottom: 3px solid $color-border;
-      }
-    }
 
     .btn {
       padding: $spacing-200 $spacing-900;

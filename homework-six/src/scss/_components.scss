@@ -1,7 +1,11 @@
 @use 'variables' as *;
 
 .container {
-  padding-inline: $page-padding-inline;
+  padding-inline: 11rem;
+}
+
+.container-lg {
+  padding-inline: 15rem;
 }
 
 .section {
@@ -29,5 +33,39 @@
 
   &--secondary {
     background-color: $color-secondary;
+  }
+}
+
+.nav-link {
+  transition: color $transition-fast ease-out;
+
+  font-family: $font-family-heading;
+  font-size: $font-size-600;
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  &--active-header {
+    border-bottom: 3px solid $color-border;
+  }
+
+  &--active-mobile {
+    position: relative;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      top: 50%;
+      left: -2rem;
+      transform: translateY(-50%);
+
+      width: 1rem;
+      height: 1rem;
+      border-radius: $border-radius-full;
+
+      background-color: $color-primary;
+    }
   }
 }

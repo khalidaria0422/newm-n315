@@ -6,7 +6,7 @@
     <title>The Jungle Cook</title>
   </head>
   <body>
-    <header class="header container">
+    <header class="header">
       <a href="#home" class="brand">
         <div class="brand__circle brand__circle--blue"></div>
         <div class="brand__circle brand__circle--yellow"></div>
@@ -19,41 +19,34 @@
       <nav>
         <ul class="header__nav">
           <li>
-            <a href="#home" class="header__nav-link header__nav-link--active"
-              >Home</a
-            >
+            <a href="#home" id="home-header" class="nav-link">Home</a>
           </li>
-          <li><a href="#browse" class="header__nav-link">Browse</a></li>
           <li>
-            <a href="#create-recipe" class="header__nav-link">Create Recipe</a>
+            <a href="#browse" id="browse-header" class="nav-link">Browse</a>
+          </li>
+          <li>
+            <a href="#create-recipe" id="create-recipe-header" class="nav-link"
+              >Create Recipe</a
+            >
           </li>
           <li><a href="#login" class="btn btn--primary">Login</a></li>
         </ul>
+
+        <!-- Mobile navigation hamburger button, initially hidden and shown on smaller screens -->
+        <button class="hamburger">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
       </nav>
     </header>
 
-    <main id="app">
-      <div class="home container">
-        <div class="home__circles">
-          <div class="home__circle home__circle--yellow">
-            <h1 class="home__title">The Jungle Cook</h1>
-            <p class="home__description">
-              The home to various recipes of your choice. Add your own recipe
-              today and fill the world with joy!
-            </p>
-          </div>
+    <main id="app"></main>
 
-          <div class="home__circle home__circle--red">
-            <p class="home__description home__description--red">
-              Want to be a Jungle Cook? Go ahead, the kitchen is yours!
-            </p>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer class="footer container">
-      <p>Copyright &copy; <span id="copyright-year"></span> The Jungle Cook</p>
+    <footer class="footer">
+      <p class="footer__copyright">
+        Copyright &copy; <span id="copyright-year"></span> The Jungle Cook
+      </p>
 
       <ul class="footer__nav">
         <li><a href="#create-recipe">Create Recipe</a></li>
@@ -77,6 +70,24 @@
         </a>
       </div>
     </footer>
+
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li>
+          <a href="#home" id="home-mobile" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a href="#browse" id="browse-mobile" class="nav-link">Browse</a>
+        </li>
+        <li>
+          <a href="#create-recipe" id="create-recipe-mobile" class="nav-link"
+            >Create Recipe</a
+          >
+        </li>
+        <li><a href="#login" class="btn btn--primary">Login</a></li>
+      </ul>
+    </nav>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

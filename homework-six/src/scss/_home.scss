@@ -39,8 +39,6 @@
     width: var(--circle-container-width);
     height: var(--circle-container-height);
 
-    // background: #ccc;
-
     .home__circle {
       display: flex;
       flex-direction: column;
@@ -53,6 +51,7 @@
 
       .home__title {
         font-size: $font-size-600;
+        margin-bottom: $spacing-700;
       }
 
       .home__description {
@@ -80,7 +79,7 @@
 
       &--red {
         position: absolute;
-        top: 0;
+        top: -1rem;
         right: 0;
 
         width: var(--circle-red-diameter);
