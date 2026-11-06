@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Jungle Cook</title>
+  </head>
+  <body>
+    <header class="header container">
+      <a href="#home" class="brand">
+        <div class="brand__circle brand__circle--blue"></div>
+        <div class="brand__circle brand__circle--yellow"></div>
+        <div class="brand__circle brand__circle--green"></div>
+        <div class="brand__circle brand__circle--red"></div>
+
+        <span class="brand__text">The Jungle Cook</span>
+      </a>
+
+      <nav>
+        <ul class="header__nav">
+          <li>
+            <a href="#home" class="header__nav-link header__nav-link--active"
+              >Home</a
+            >
+          </li>
+          <li><a href="#browse" class="header__nav-link">Browse</a></li>
+          <li>
+            <a href="#create-recipe" class="header__nav-link">Create Recipe</a>
+          </li>
+          <li><a href="#login" class="btn btn--primary">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="app">
+      <div class="home container">
+        <div class="home__circles">
+          <div class="home__circle home__circle--yellow">
+            <h1 class="home__title">The Jungle Cook</h1>
+            <p class="home__description">
+              The home to various recipes of your choice. Add your own recipe
+              today and fill the world with joy!
+            </p>
+          </div>
+
+          <div class="home__circle home__circle--red">
+            <p class="home__description home__description--red">
+              Want to be a Jungle Cook? Go ahead, the kitchen is yours!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer container">
+      <p>Copyright &copy; <span id="copyright-year"></span> The Jungle Cook</p>
+
+      <ul class="footer__nav">
+        <li><a href="#create-recipe">Create Recipe</a></li>
+        <li><a href="#your-recipes">Your Recipes</a></li>
+        <li><a href="#recipes-by-category">Recipes by Category</a></li>
+        <li><a href="#privacy-and-copyright">Privacy and Copyright</a></li>
+      </ul>
+
+      <div class="footer__socials">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          class="icon icon--facebook"
+        >
+        </a>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          class="icon icon--instagram"
+        >
+        </a>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

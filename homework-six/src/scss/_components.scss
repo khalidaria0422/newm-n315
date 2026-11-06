@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+.container {
+  padding-inline: $page-padding-inline;
+}
+
+.section {
+  padding-block: $section-padding-block;
+}
+
+.btn {
+  display: inline-block;
+
+  border-radius: $border-radius-full;
+
+  font-family: $font-family-heading;
+  letter-spacing: 0.1em;
+
+  transition: background-color $transition-fast ease-out;
+  box-shadow: $shadow-md;
+
+  &--primary {
+    background-color: $color-primary;
+
+    &:hover {
+      background-color: rgba($color-primary, 0.7);
+    }
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
+  }
+}
