@@ -10,5 +10,8 @@
   "type": "commonjs",
   "devDependencies": {
     "sass": "^1.105.1"
+  },
+  "dependencies": {
+    "firebase": "^13.1.0"
   }
 }

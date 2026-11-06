@@ -4,11 +4,129 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Phosphor Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>MVC Model</title>
+    <title>comefundme</title>
   </head>
   <body>
+    <header class="header container">
+      <!-- Nav -->
+      <nav>
+        <ul class="nav">
+          <li>
+            <a href="#" class="nav-link link" id="donate">Donate</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link" id="fundraise">Fundraise</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="index.html" class="brand-name link" id="home">comefundme</a>
+
+      <nav>
+        <ul class="nav">
+          <li><a href="#" class="nav-link link" id="about">About</a></li>
+          <li>
+            <a href="#" class="btn btn--secondary link" id="cta"
+              >Start a ComeFundMe</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="app">
+      <section class="fundraise container">
+        <h2 class="fundraise__heading">Start a ComeFundMe for Your Cause</h2>
+        <p class="fundraise__description">
+          Raise funds for your cause quickly and easily with ComeFundMe.
+        </p>
+
+        <div class="fundraise__cta">
+          <a class="btn btn--secondary">Start a ComeFundMe</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer container">
+      <!-- Brand/Contact -->
+      <div class="footer__contact">
+        <a href="index.html" class="brand-name link" id="home">comefundme</a>
+        <a href="tel:+13173171234" class="footer__contact-link"
+          >+1 (317) 317-1234</a
+        >
+        <a href="mailto:comefundme@gmail.com" class="footer__contact-link"
+          >comefundme@gmail.com</a
+        >
+
+        <p class="footer__contact-copyright">
+          &copy; 2026 ComeFundMe. All rights reserved.
+        </p>
+      </div>
+
+      <!-- Explore -->
+      <div>
+        <h2 class="footer__heading">Explore</h2>
+        <ul>
+          <li class="nav-item">
+            <a href="#" class="nav-link link" id="donate">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link" id="fundraise">Fundraise</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">How to Fundraise</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">How ComeFundMe Works</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h2 class="footer__heading">Company</h2>
+        <ul>
+          <li class="nav-item">
+            <a href="#" class="nav-link link" id="about">About</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h2 class="footer__heading">Legal</h2>
+        <ul>
+          <li class="nav-item"><a href="#" class="nav-link">Privacy</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Terms</a></li>
+        </ul>
+      </div>
+    </footer>
+
     <script type="module" src="js/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,60 @@
+@use 'variables' as *;
+
+.container {
+  padding-inline: $page-padding-inline;
+}
+
+.brand-name {
+  color: $color-primary;
+  font-family: $font-family-heading;
+  font-size: $font-size-600;
+  font-weight: $font-weight-bold;
+}
+
+.nav-link {
+  color: $color-text;
+
+  transition: $transition-fast;
+
+  &:hover {
+    color: $color-secondary;
+  }
+
+  &--active {
+    border-bottom: 2px solid $color-secondary;
+  }
+}
+
+.btn {
+  display: inline-block;
+
+  padding-inline: $spacing-400;
+  padding-block: $spacing-200;
+  border-radius: $border-radius-full;
+
+  background-color: $color-surface;
+  color: $color-primary;
+  font-size: $font-size-400;
+  font-weight: $font-weight-bold;
+  text-align: center;
+
+  transition: $transition-fast;
+
+  &--primary {
+    background-color: $color-primary;
+    color: $color-text-inverse;
+
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
+    color: $color-text-inverse;
+
+    &:hover {
+      background-color: $color-secondary-dark;
+    }
+  }
+}
