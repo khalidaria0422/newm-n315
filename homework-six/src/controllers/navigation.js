@@ -2,6 +2,7 @@
 
 const hamburger = document.querySelector('.hamburger');
 const mobileNav = document.querySelector('.mobile-nav');
+let authMode;
 
 export const updateActiveNavLinks = function (page) {
   document
@@ -38,7 +39,7 @@ export const updateMobileNavColor = function (page) {
       removeAllColors();
       mobileNav.classList.add('mobile-nav--green');
       break;
-    case 'login':
+    case 'authentication':
       removeAllColors();
       mobileNav.classList.add('mobile-nav--yellow');
       break;
@@ -68,8 +69,35 @@ const setMobileNavCenter = function () {
   mobileNav.style.setProperty('--hamburger-y', `${centerY}px`);
 };
 
+// Initialize the authentication forms based on the current auth mode
+export const initAuthentication = function () {
+  const loginForm = document.getElementById('login-form');
+  const registerForm = document.getElementById('register-form');
+
+  if (!loginForm || !registerForm) return;
+
+  loginForm.classList.toggle('auth__form--active', authMode === 'login');
+  registerForm.classList.toggle('auth__form--active', authMode === 'register');
+};
+
 export const initNavigation = function () {
+  const mobileNavLinks = mobileNav.querySelectorAll('a');
+
   hamburger.addEventListener('click', toggleMobileNav);
   window.addEventListener('resize', setMobileNavCenter);
+
   setMobileNavCenter();
+
+  // Handle authentication button clicks to toggle the appropriate form
+  document.addEventListener('click', (event) => {
+    const authButton = event.target.closest('[data-auth-mode]');
+    if (!authButton) return;
+
+    authMode = authButton.dataset.authMode;
+    initAuthentication(authMode);
+  });
+
+  mobileNavLinks.forEach((link) => {
+    link.addEventListener('click', toggleMobileNav);
+  });
 };

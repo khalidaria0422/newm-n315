@@ -1,7 +1,11 @@
 'use strict';
 
 const pages = import.meta.glob('../pages/*.js');
-import { updateActiveNavLinks, updateMobileNavColor } from './navigation.js';
+import {
+  updateActiveNavLinks,
+  updateMobileNavColor,
+  initAuthentication,
+} from './navigation.js';
 
 const loadPage = async function () {
   const page = window.location.hash.replace('#', '') || 'home';
@@ -18,6 +22,7 @@ const loadPage = async function () {
   app.innerHTML = module.default();
   updateActiveNavLinks(page);
   updateMobileNavColor(page);
+  if (page === 'authentication') initAuthentication();
 };
 
 export const initRouter = function () {

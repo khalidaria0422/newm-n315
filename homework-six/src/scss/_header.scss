@@ -77,8 +77,8 @@
     align-items: center;
     gap: $spacing-800;
 
-    .btn {
-      padding: $spacing-200 $spacing-900;
+    .btn--primary {
+      margin-right: $spacing-300;
     }
   }
 }

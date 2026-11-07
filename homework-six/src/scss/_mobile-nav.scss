@@ -1,5 +1,9 @@
 @use 'variables' as *;
 
+body:has(.home) .mobile-nav--open .btn--secondary:hover {
+  background-color: $color-red-light-dark;
+}
+
 .hamburger {
   position: relative;
 
@@ -81,11 +85,11 @@
   }
 
   &--yellow {
-    background-color: $color-yellow;
+    background-color: $color-yellow-light;
   }
 
   &--white {
-    background-color: $color-white;
+    background-color: $color-white-dark;
   }
 
   .mobile-nav__list {
@@ -94,7 +98,7 @@
     gap: $spacing-800;
 
     .btn {
-      padding: $spacing-200 $spacing-900;
+      width: 100%;
     }
   }
 }
