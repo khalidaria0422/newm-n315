@@ -1,0 +1,104 @@
+@use 'variables' as *;
+
+body:has(.home) .mobile-nav--open .btn--secondary:hover {
+  background-color: $color-red-light-dark;
+}
+
+.hamburger {
+  position: relative;
+
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: $spacing-700;
+  height: $spacing-500;
+  border: none;
+
+  background: none;
+
+  cursor: pointer;
+
+  &:hover {
+    .hamburger__bar {
+      border-color: $color-primary;
+    }
+  }
+
+  // Styles for the individual bars of the hamburger button
+  &__bar {
+    display: block;
+
+    border: 1px solid $color-black;
+
+    transition: border-color $transition-fast ease-out;
+  }
+
+  // Styles for the hamburger button when it is in the open state
+  &--open {
+    .hamburger__bar {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      margin-top: -1px;
+
+      &:nth-child(1) {
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.mobile-nav {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // Mobile navigation expansion effect
+  clip-path: circle(0% at var(--hamburger-x, 100%) var(--hamburger-y, 0));
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    clip-path $transition-fast ease-out,
+    visibility $transition-fast ease-out;
+
+  &--red {
+    background-color: $color-red;
+  }
+
+  &--green {
+    background-color: $color-green;
+  }
+
+  &--yellow {
+    background-color: $color-yellow-light;
+  }
+
+  &--white {
+    background-color: $color-white-dark;
+  }
+
+  .mobile-nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-800;
+
+    .btn {
+      width: 100%;
+    }
+  }
+}

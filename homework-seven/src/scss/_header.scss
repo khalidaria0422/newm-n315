@@ -1,0 +1,84 @@
+@use 'variables' as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  min-height: $header-height;
+  padding-inline: 5rem;
+
+  // Brand styles
+  .brand {
+    position: relative;
+
+    font-family: $font-family-heading;
+    font-size: $font-size-600;
+
+    &__circle {
+      border-radius: $border-radius-full;
+      z-index: -100;
+
+      &--blue {
+        position: absolute;
+        top: -25%;
+
+        width: 3.2rem;
+        height: 3.2rem;
+
+        background-color: $color-blue;
+      }
+
+      &--yellow {
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+
+        width: 3rem;
+        height: 3rem;
+
+        background-color: $color-yellow;
+      }
+
+      &--green {
+        position: absolute;
+        top: -25%;
+        left: 50%;
+        transform: translateX(-60%);
+
+        width: 5.4rem;
+        height: 5.4rem;
+
+        background-color: $color-green;
+      }
+
+      &--red {
+        position: absolute;
+        right: 0;
+        top: 25%;
+        transform: translateX(-38%);
+
+        width: 2.4rem;
+        height: 2.4rem;
+
+        background-color: $color-red;
+      }
+    }
+  }
+
+  // Navigation styles
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: $spacing-800;
+
+    .btn--primary {
+      margin-right: $spacing-300;
+    }
+  }
+}

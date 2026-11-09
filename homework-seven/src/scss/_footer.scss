@@ -1,0 +1,51 @@
+@use 'variables' as *;
+
+.footer {
+  --color: #292929;
+  --color-hover: #{$color-black};
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-block: $spacing-600;
+  padding-inline: 4rem;
+
+  color: var(--color);
+  font-style: italic;
+
+  &__nav {
+    display: flex;
+    gap: $spacing-600;
+
+    a:hover {
+      color: var(--color-hover);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: $spacing-800;
+
+    .icon {
+      width: 19px;
+      height: 19px;
+      background-color: var(--color);
+
+      &:hover {
+        background-color: var(--color-hover);
+      }
+
+      &--facebook {
+        mask: url('../assets/images/facebook.png') center / contain no-repeat;
+      }
+      &--instagram {
+        mask: url('../assets/images/instagram.png') center / contain no-repeat;
+      }
+    }
+  }
+}

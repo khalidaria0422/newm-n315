@@ -1,0 +1,83 @@
+@use 'variables' as *;
+
+// Hover styles for authentication page elements
+body:has(#app > .auth) {
+  .btn--primary:hover {
+    background-color: $color-yellow-dark;
+  }
+
+  .nav-link:hover {
+    color: rgba($color-text, 0.6);
+  }
+
+  .hamburger:hover {
+    .hamburger__bar {
+      border-color: rgba($color-black, 0.5);
+    }
+  }
+}
+
+.auth {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $color-yellow;
+
+  &__form {
+    display: none;
+    flex-direction: column;
+    gap: $spacing-950;
+
+    width: 25rem;
+
+    // Eyebrow style only for the register form
+    .auth__eyebrow {
+      font-size: $font-size-100;
+      font-style: italic;
+    }
+
+    .auth__title {
+      margin-bottom: $spacing-200;
+
+      font-family: $font-family-heading-secondary;
+      font-size: $font-size-700;
+      font-weight: $font-weight-normal;
+    }
+
+    .auth__input {
+      padding-bottom: $spacing-100;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid rgba($color-black, 0.3);
+
+      background: none;
+      font-size: $font-size-100;
+
+      &::placeholder {
+        color: rgba($color-text, 0.6);
+      }
+
+      &:focus {
+        border-bottom: 1px solid $color-black;
+      }
+    }
+
+    .auth__actions {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-600;
+
+      .btn {
+        font-size: $font-size-600;
+      }
+    }
+
+    &--active {
+      display: flex;
+    }
+  }
+}

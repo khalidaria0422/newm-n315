@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Jungle Cook</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="brand">
+        <div class="brand__circle brand__circle--blue"></div>
+        <div class="brand__circle brand__circle--yellow"></div>
+        <div class="brand__circle brand__circle--green"></div>
+        <div class="brand__circle brand__circle--red"></div>
+
+        <span class="brand__text">The Jungle Cook</span>
+      </a>
+
+      <nav>
+        <ul class="header__nav">
+          <li>
+            <a href="#home" id="home-header" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="#browse" id="browse-header" class="nav-link">Browse</a>
+          </li>
+          <li>
+            <a href="#create-recipe" id="create-recipe-header" class="nav-link"
+              >Create Recipe</a
+            >
+          </li>
+          <li>
+            <a
+              href="#authentication"
+              data-auth-mode="login"
+              class="btn btn--primary"
+              >Login</a
+            >
+            <a
+              href="#authentication"
+              data-auth-mode="register"
+              class="btn btn--secondary"
+              >Register</a
+            >
+          </li>
+        </ul>
+
+        <!-- Mobile navigation hamburger button, initially hidden and shown on smaller screens -->
+        <button class="hamburger">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="app"></main>
+
+    <footer class="footer">
+      <p class="footer__copyright">
+        Copyright &copy; <span id="copyright-year"></span> The Jungle Cook
+      </p>
+
+      <ul class="footer__nav">
+        <li><a href="#create-recipe">Create Recipe</a></li>
+        <li><a href="#your-recipes">Your Recipes</a></li>
+        <li><a href="#recipes-by-category">Recipes by Category</a></li>
+        <li><a href="#privacy-and-copyright">Privacy and Copyright</a></li>
+      </ul>
+
+      <div class="footer__socials">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          class="icon icon--facebook"
+        >
+        </a>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          class="icon icon--instagram"
+        >
+        </a>
+      </div>
+    </footer>
+
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li>
+          <a href="#home" id="home-mobile" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a href="#browse" id="browse-mobile" class="nav-link">Browse</a>
+        </li>
+        <li>
+          <a href="#create-recipe" id="create-recipe-mobile" class="nav-link"
+            >Create Recipe</a
+          >
+        </li>
+        <li>
+          <a
+            href="#authentication"
+            data-auth-mode="login"
+            class="btn btn--primary"
+            >Login</a
+          >
+        </li>
+        <li>
+          <a
+            href="#authentication"
+            data-auth-mode="register"
+            class="btn btn--secondary"
+            >Register</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
