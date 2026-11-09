@@ -1,6 +1,6 @@
 # The Jungle Cook
 
-Web 4: [Homework 6](https://in-info-web4.luddy.indianapolis.iu.edu/~karia/newm-n315/homework-six)
+Web 4: [Homework 7](https://in-info-web4.luddy.indianapolis.iu.edu/~karia/newm-n315/homework-seven)
 
 ## Instructions
 

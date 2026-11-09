@@ -10,3 +10,4 @@ Look in the subdirectories for more info/instructions.
 - [Homework 4 (Panjshir University)](https://in-info-web4.luddy.indianapolis.iu.edu/~karia/newm-n315/homework-four)
 - [Homework 5 (Summit Ridge)](https://in-info-web4.luddy.indianapolis.iu.edu/~karia/newm-n315/homework-five)
 - [Homework 6 (The Jungle Cook)](https://in-info-web4.luddy.indianapolis.iu.edu/~karia/newm-n315/homework-six)
+- [Homework 7 (The Jungle Cook)](https://in-info-web4.luddy.indianapolis.iu.edu/~karia/newm-n315/homework-seven)
