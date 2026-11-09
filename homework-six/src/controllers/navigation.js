@@ -97,6 +97,7 @@ export const initNavigation = function () {
     initAuthentication(authMode);
   });
 
+  // Close the mobile navigation when a link is clicked
   mobileNavLinks.forEach((link) => {
     link.addEventListener('click', toggleMobileNav);
   });
