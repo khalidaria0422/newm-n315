@@ -48,21 +48,40 @@ body:has(#app > .auth) {
       font-weight: $font-weight-normal;
     }
 
-    .auth__input {
-      padding-bottom: $spacing-100;
-      border: none;
-      outline: none;
-      border-bottom: 1px solid rgba($color-black, 0.3);
+    .auth__field {
+      position: relative;
 
-      background: none;
-      font-size: $font-size-100;
+      .auth__input {
+        width: 100%;
+        padding-bottom: $spacing-100;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgba($color-black, 0.3);
 
-      &::placeholder {
-        color: rgba($color-text, 0.6);
+        background: none;
+        font-size: $font-size-100;
+
+        &::placeholder {
+          color: rgba($color-text, 0.6);
+        }
+
+        &:focus {
+          border-bottom: 1px solid $color-black;
+        }
+
+        // Highlight the input field with an error if the adjacent error message is visible
+        &:has(+ .auth__error:not([hidden])) {
+          border-bottom-color: $color-error;
+        }
       }
 
-      &:focus {
-        border-bottom: 1px solid $color-black;
+      .auth__error {
+        position: absolute;
+        bottom: -80%;
+        left: 0;
+
+        color: $color-error;
+        font-size: $font-size-50;
       }
     }
 

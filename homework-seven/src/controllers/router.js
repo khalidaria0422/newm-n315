@@ -7,7 +7,7 @@ import {
   initAuthentication,
 } from './navigation.js';
 
-const loadPage = async function () {
+export const loadPage = async function () {
   const page = window.location.hash.replace('#', '') || 'home';
   const app = document.getElementById('app');
   const pagePath = `../pages/${page}.js`;
