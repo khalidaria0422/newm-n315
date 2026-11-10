@@ -70,7 +70,7 @@ const setMobileNavCenter = function () {
 };
 
 // Initialize the authentication forms based on the current auth mode
-export const initAuthentication = function () {
+export const initAuthentication = function (authButton) {
   const loginForm = document.getElementById('login-form');
   const registerForm = document.getElementById('register-form');
 
@@ -78,6 +78,29 @@ export const initAuthentication = function () {
 
   loginForm.classList.toggle('auth__form--active', authMode === 'login');
   registerForm.classList.toggle('auth__form--active', authMode === 'register');
+
+  // Don't clear the forms and reset error messages if the auth button is a submit button
+  if (authButton?.type === 'submit') return;
+
+  const errorElements = {
+    firstNameError: document.getElementById('first-name-error'),
+    lastNameError: document.getElementById('last-name-error'),
+    loginEmailError: document.getElementById(`login-email-error`),
+    registerEmailError: document.getElementById(`register-email-error`),
+    loginPasswordError: document.getElementById(`login-password-error`),
+    registerPasswordError: document.getElementById(`register-password-error`),
+  };
+
+  // Reset the forms and hide all error messages
+  loginForm.reset();
+  registerForm.reset();
+
+  Object.values(errorElements).forEach((errorElement) => {
+    if (errorElement) {
+      errorElement.textContent = '';
+      errorElement.hidden = true;
+    }
+  });
 };
 
 export const initNavigation = function () {
@@ -94,7 +117,7 @@ export const initNavigation = function () {
     if (!authButton) return;
 
     authMode = authButton.dataset.authMode;
-    initAuthentication(authMode);
+    initAuthentication(authButton);
   });
 
   // Close the mobile navigation when a link is clicked
