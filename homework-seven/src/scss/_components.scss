@@ -42,6 +42,10 @@
       background-color: rgba($color-secondary, 0.7);
     }
   }
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .nav-link {

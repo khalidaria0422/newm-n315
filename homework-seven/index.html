@@ -42,6 +42,12 @@
               class="btn btn--secondary"
               >Register</a
             >
+            <a
+              href="#home"
+              data-auth-mode="logout"
+              class="btn btn--primary btn--hidden"
+              >Logout</a
+            >
           </li>
         </ul>
 
@@ -97,24 +103,30 @@
             >Create Recipe</a
           >
         </li>
-        <li>
+        <li class="mobile-nav__auth">
           <a
             href="#authentication"
             data-auth-mode="login"
             class="btn btn--primary"
             >Login</a
           >
-        </li>
-        <li>
           <a
             href="#authentication"
             data-auth-mode="register"
             class="btn btn--secondary"
             >Register</a
           >
+          <a
+            href="#home"
+            data-auth-mode="logout"
+            class="btn btn--primary btn--hidden"
+            >Logout</a
+          >
         </li>
       </ul>
     </nav>
+
+    <div class="toast-container"></div>
 
     <script type="module" src="/src/main.js"></script>
   </body>

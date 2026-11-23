@@ -1,5 +1,7 @@
 'use strict';
 
+import { toggleNavButtons, showToast } from './utilities';
+
 const hamburger = document.querySelector('.hamburger');
 const mobileNav = document.querySelector('.mobile-nav');
 let authMode;
@@ -105,6 +107,7 @@ export const initAuthentication = function (authButton) {
 
 export const initNavigation = function () {
   const mobileNavLinks = mobileNav.querySelectorAll('a');
+  const logoutButtons = document.querySelectorAll('[data-auth-mode="logout"]');
 
   hamburger.addEventListener('click', toggleMobileNav);
   window.addEventListener('resize', setMobileNavCenter);
@@ -118,6 +121,14 @@ export const initNavigation = function () {
 
     authMode = authButton.dataset.authMode;
     initAuthentication(authButton);
+  });
+
+  // Handle logout button click
+  logoutButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      toggleNavButtons();
+      showToast('Logged out successfully!');
+    });
   });
 
   // Close the mobile navigation when a link is clicked

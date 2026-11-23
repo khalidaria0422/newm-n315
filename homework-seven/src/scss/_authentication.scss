@@ -34,6 +34,10 @@ body:has(#app > .auth) {
 
     width: 25rem;
 
+    &--active {
+      display: flex;
+    }
+
     // Eyebrow style only for the register form
     .auth__eyebrow {
       font-size: $font-size-100;
@@ -75,6 +79,7 @@ body:has(#app > .auth) {
         }
       }
 
+      // Position the error message relative to the input field
       .auth__error {
         position: absolute;
         bottom: -80%;
@@ -93,10 +98,6 @@ body:has(#app > .auth) {
       .btn {
         font-size: $font-size-600;
       }
-    }
-
-    &--active {
-      display: flex;
     }
   }
 }

@@ -33,6 +33,7 @@ export default function authentication() {
       <span class="auth__error" id="login-password-error" hidden></span>
     </div>
 
+
     <div class="auth__actions">
       <button
         type="submit"
@@ -118,6 +119,7 @@ export default function authentication() {
 
       <span class="auth__error" id="register-password-error" hidden></span>
     </div>
+
 
     <div class="auth__actions">
       <button

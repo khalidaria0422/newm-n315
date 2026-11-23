@@ -97,8 +97,10 @@ body:has(.home) .mobile-nav--open .btn--secondary:hover {
     flex-direction: column;
     gap: $spacing-800;
 
-    .btn {
-      width: 100%;
+    .mobile-nav__auth {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-400;
     }
   }
 }

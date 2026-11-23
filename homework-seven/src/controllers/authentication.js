@@ -5,7 +5,9 @@ import {
   signInWithEmailAndPassword,
 } from 'firebase/auth';
 import { auth } from '../firebase';
+import { showToast, toggleNavButtons } from './utilities';
 
+// Validate authentication form fields (login and register)
 const validateForm = function (form) {
   const firstName = form.elements.namedItem('first-name');
   const lastName = form.elements.namedItem('last-name');
@@ -80,25 +82,48 @@ export const initAuthentication = function () {
     const data = new FormData(form);
     const email = data.get('email').trim();
     const password = data.get('password');
-    if (!validateForm(form)) return;
+
+    if (!validateForm(form)) return; // Stop submission if form is invalid
+
+    const messages = {
+      // Login
+      'auth/invalid-credential': 'Incorrect email or password.',
+      'auth/user-not-found': 'Incorrect email or password.',
+      'auth/wrong-password': 'Incorrect email or password.',
+      'auth/user-disabled': 'This account has been disabled. Contact support.',
+
+      // Registration
+      'auth/email-already-in-use': 'Email is already in use. Try logging in.',
+      'auth/weak-password':
+        'Your password does not meet the requirements. Choose a stronger password.',
+
+      // Shared
+      'auth/too-many-requests': 'Too many attempts. Please try again later.',
+      'auth/network-request-failed': 'Connection failed. Check your internet.',
+    };
 
     if (form.id === 'register-form') {
       try {
         await createUserWithEmailAndPassword(auth, email, password);
-        alert('Account created!');
+
+        toggleNavButtons();
+        showToast('Account created!');
         window.location.hash = '#home';
       } catch (error) {
-        console.error('Error creating user:', error);
-        alert(`Registration failed. (${error.code})`);
+        const message = messages[error.code] || 'An unexpected error occurred.';
+        showToast(`Account creation failed. (${message})`, 'error');
       }
     } else {
       try {
         await signInWithEmailAndPassword(auth, email, password);
-        alert('Logged in!');
+
+        toggleNavButtons();
+        showToast('Logged in successfully!');
         window.location.hash = '#home';
       } catch (error) {
-        console.error('Error logging in:', error);
-        alert(`Login failed. (${error.code})`);
+        const message = messages[error.code] || 'An unexpected error occurred.';
+        showToast(`Login failed. (${message})`, 'error');
+        console.error(error);
       }
     }
 
