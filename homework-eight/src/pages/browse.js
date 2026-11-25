@@ -1,3 +1,10 @@
+import pizza from '../assets/images/recipe-pizza.png';
+import burger from '../assets/images/recipe-burger.png';
+import pilaf from '../assets/images/recipe-pilaf.png';
+import chowmein from '../assets/images/recipe-chowmein.png';
+import time from '../assets/images/time.png';
+import servings from '../assets/images/servings.png';
+
 export default function browse() {
   return `
   <div class="browse container container--md">
@@ -7,7 +14,7 @@ export default function browse() {
     <div class="browse__grid">
       <div class="recipe">
         <img
-          src="src/assets/images/recipe-pizza.png"
+          src="${pizza}"
           alt="Pizza"
           class="recipe__image"
         />
@@ -24,12 +31,12 @@ export default function browse() {
 
           <div>
             <div class="recipe__meta">
-              <img src="src/assets/images/time.png" alt="Clock" />
+              <img src="${time}" alt="Clock" />
               <span class="recipe__meta-text">1h 24min</span>
             </div>
 
             <div class="recipe__meta">
-              <img src="src/assets/images/servings.png" alt="Plate" />
+              <img src="${servings}" alt="Plate" />
               <span class="recipe__meta-text">4 servings</span>
             </div>
           </div>
@@ -38,7 +45,7 @@ export default function browse() {
 
       <div class="recipe">
         <img
-          src="src/assets/images/recipe-burger.png"
+          src="${burger}"
           alt="Burger"
           class="recipe__image"
         />
@@ -56,12 +63,12 @@ export default function browse() {
 
           <div>
             <div class="recipe__meta">
-              <img src="src/assets/images/time.png" alt="Clock" />
+              <img src="${time}" alt="Clock" />
               <span class="recipe__meta-text">30 min</span>
             </div>
 
             <div class="recipe__meta">
-              <img src="src/assets/images/servings.png" alt="Plate" />
+              <img src="${servings}" alt="Plate" />
               <span class="recipe__meta-text">4 servings</span>
             </div>
           </div>
@@ -70,7 +77,7 @@ export default function browse() {
 
       <div class="recipe">
         <img
-          src="src/assets/images/recipe-pilaf.png"
+          src="${pilaf}"
           alt="Pilaf"
           class="recipe__image"
         />
@@ -87,12 +94,12 @@ export default function browse() {
 
           <div>
             <div class="recipe__meta">
-              <img src="src/assets/images/time.png" alt="Clock" />
+              <img src="${time}" alt="Clock" />
               <span class="recipe__meta-text">1h 15min</span>
             </div>
 
             <div class="recipe__meta">
-              <img src="src/assets/images/servings.png" alt="Plate" />
+              <img src="${servings}" alt="Plate" />
               <span class="recipe__meta-text">6 servings</span>
             </div>
           </div>
@@ -101,7 +108,7 @@ export default function browse() {
 
       <div class="recipe">
         <img
-          src="src/assets/images/recipe-chowmein.png"
+          src="${chowmein}"
           alt="Chowmein"
           class="recipe__image"
         />
@@ -119,12 +126,12 @@ export default function browse() {
 
           <div>
             <div class="recipe__meta">
-              <img src="src/assets/images/time.png" alt="Clock" />
+              <img src="${time}" alt="Clock" />
               <span class="recipe__meta-text">20min</span>
             </div>
 
             <div class="recipe__meta">
-              <img src="src/assets/images/servings.png" alt="Plate" />
+              <img src="${servings}" alt="Plate" />
               <span class="recipe__meta-text">4 servings</span>
             </div>
           </div>
