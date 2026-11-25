@@ -1,0 +1,23 @@
+@use 'variables' as *;
+
+.browse {
+  padding-block: $page-padding-block;
+
+  background:
+    linear-gradient(rgba($color-green, 0.8), rgba($color-green, 0.8)),
+    url('../assets/images/browse-recipes-background.png') center / cover
+      no-repeat;
+
+  &__title {
+    margin-bottom: $spacing-900;
+
+    font-size: $font-size-600;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: $spacing-900;
+  }
+}
